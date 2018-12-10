@@ -4,9 +4,6 @@ void setup() {
 }
 
 void draw() { 
-  frameRate(5);
-  //background(random(139, 142), random(42, 60), random(19, 30));
-  background(random(138, 139), random(87, 88), random(47, 48));
 
   //head shadow
   noStroke();
@@ -24,9 +21,9 @@ void draw() {
   ellipse(115, 213, 75, 70);
 
   //left eye tears
-  fill(164, 216, 242, random(150, 250));
-  //rect(86, 225, 50, 95);
-  rect(random(85, 92), 210, random(40, 50), 110);
+  fill(164, 216, 242);
+  rect(86, 225, 50, 95);
+  //rect(random(85, 92), 210, random(40, 50), 110);
 
   //left eye
   noStroke();
@@ -46,9 +43,9 @@ void draw() {
   ellipse(295, 210, 75, 70);
 
   //right eye tears
-  fill(164, 216, 242, random(150, 250));
-  //rect(265, 225, 50, 95);
-  rect(random(265, 270), 210, random(40, 45), 109);
+  fill(164, 216, 242);
+  rect(265, 225, 50, 95);
+  //rect(random(265, 270), 210, random(40, 45), 109);
 
   //right eye
   noStroke();
@@ -86,14 +83,4 @@ void draw() {
   noStroke();
   fill(204, 153, 153);
   rect(150, 255, 95, 43);
-
-  //fly
-  noStroke();
-  fill(255);
-  ellipse(mouseX+15, mouseY-5, 22, 20);
-  ellipse(mouseX-15, mouseY-5, 22, 20);
-  fill(80,0,0);
-  ellipse(mouseX, mouseY, 25, 25);
-  fill(130, 0, 0);
-  ellipse(mouseX-2, mouseY-2, 18, 18);
 }
